@@ -1,0 +1,17 @@
+name: 'Setup ClickHouse'
+description: 'Setup a ClickHouse database'
+author: 'Vahid Sohrabloo'
+branding:
+  icon: 'database'
+  color: 'yellow'
+inputs:
+  # See https://hub.docker.com/r/clickhouse/clickhouse-server/ for supported versions
+  # and further details on input environment variables
+  version:
+    description: 'Version of ClickHouse to use'
+    required: false
+    default: 'latest'
+  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
