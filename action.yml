@@ -11,7 +11,10 @@ inputs:
     description: 'Version of ClickHouse to use'
     required: false
     default: 'latest'
-  
+  password:
+    description: 'Password for the default user'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
